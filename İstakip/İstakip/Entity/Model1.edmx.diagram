@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="0b9fa35e8ac140c5973d838eb680832a" Name="Diagram1">
+        <EntityTypeShape EntityType="DbisTakipModel.TblAdmin" Width="1.5" PointX="7.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbisTakipModel.TblCagriDetay" Width="1.5" PointX="7.5" PointY="3.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbisTakipModel.TblCagrilar" Width="1.5" PointX="5.25" PointY="2.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbisTakipModel.TblDepartman" Width="1.5" PointX="0.75" PointY="3.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbisTakipModel.TblFirmalar" Width="1.5" PointX="3" PointY="8.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbisTakipModel.TblGorevDetaylar" Width="1.5" PointX="7.5" PointY="7" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbisTakipModel.TblGorevler" Width="1.5" PointX="5.25" PointY="6.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbisTakipModel.TblMesajlar" Width="1.5" PointX="5.25" PointY="11" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbisTakipModel.TblPersonel" Width="1.5" PointX="3" PointY="2.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbisTakipModel.TblSehir" Width="1.5" PointX="9.75" PointY="0.75" IsExpanded="true" />
+        <AssociationConnector Association="DbisTakipModel.FK_TblCagriDetay_TblCagrilar" ManuallyRouted="false" />
+        <AssociationConnector Association="DbisTakipModel.FK_TblCagrilar_TblFirmalar" ManuallyRouted="false" />
+        <AssociationConnector Association="DbisTakipModel.FK_TblCagrilar_TblPersonel" ManuallyRouted="false" />
+        <AssociationConnector Association="DbisTakipModel.FK_TblPersonel_TblDepartman" ManuallyRouted="false" />
+        <AssociationConnector Association="DbisTakipModel.FK_TblMesajlar_TblFirmalar" ManuallyRouted="false" />
+        <AssociationConnector Association="DbisTakipModel.FK_TblMesajlar_TblFirmalar1" ManuallyRouted="false" />
+        <AssociationConnector Association="DbisTakipModel.FK_TblGorevDetaylar_TblGorevler" ManuallyRouted="false" />
+        <AssociationConnector Association="DbisTakipModel.FK_TblGorevler_TblPersonel" ManuallyRouted="false" />
+        <AssociationConnector Association="DbisTakipModel.FK_TblGorevler_TblPersonel1" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
