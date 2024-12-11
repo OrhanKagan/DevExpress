@@ -19,7 +19,7 @@ namespace İstakip.Formlar
         }
 
 
-        DbisTakipEntitiess db = new DbisTakipEntitiess();
+        DbisTakipEntities db = new DbisTakipEntities();
         private void FrmAnaFrom_Load(object sender, EventArgs e)
         {
             gridControl1.DataSource = (from x in db.TblGorevler

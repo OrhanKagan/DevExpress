@@ -17,7 +17,7 @@ namespace İstakip.Formlar
         {
             InitializeComponent();
         }
-        DbisTakipEntitiess db = new DbisTakipEntitiess();
+        DbisTakipEntities db = new DbisTakipEntities();
         private void FrmDepartmanİstatistik_Load(object sender, EventArgs e)
         {
             var d1 = db.TblGorevler.GroupBy(x => x.GorevAlan).OrderByDescending(z => z.Count()).Select(y => y.Key).FirstOrDefault();

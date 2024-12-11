@@ -19,7 +19,7 @@ namespace İstakip.Formlar
             InitializeComponent();
         }
 
-        DbisTakipEntitiess db = new DbisTakipEntitiess();
+        DbisTakipEntities db = new DbisTakipEntities();
 
         private void FrmPasifCagrı_Load(object sender, EventArgs e)
         {

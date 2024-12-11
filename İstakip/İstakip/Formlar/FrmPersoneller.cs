@@ -19,7 +19,7 @@ namespace İstakip.Formlar
             InitializeComponent();
         }
 
-        DbisTakipEntitiess db = new DbisTakipEntitiess();
+        DbisTakipEntities db = new DbisTakipEntities();
         
         void personeller()
         {
@@ -105,6 +105,11 @@ namespace İstakip.Formlar
             db.SaveChanges();
             XtraMessageBox.Show("Personel başarılı bir şekilde guncellendi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Question);
             personeller();
+        }
+
+        private void lookUpEdit1_EditValueChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

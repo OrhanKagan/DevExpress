@@ -30,33 +30,33 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmLogin));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
-            this.pictureEdit1 = new DevExpress.XtraEditors.PictureEdit();
-            this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
+            this.pictureEdit1 = new DevExpress.XtraEditors.PictureEdit();
+            this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.BtnAdmin = new System.Windows.Forms.Button();
             this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
             this.hyperlinkLabelControl2 = new DevExpress.XtraEditors.HyperlinkLabelControl();
             this.hyperlinkLabelControl3 = new DevExpress.XtraEditors.HyperlinkLabelControl();
             this.hyperlinkLabelControl4 = new DevExpress.XtraEditors.HyperlinkLabelControl();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.TxtKullanici = new DevExpress.XtraEditors.TextEdit();
             this.pictureEdit2 = new DevExpress.XtraEditors.PictureEdit();
+            this.TxtKullanici = new DevExpress.XtraEditors.TextEdit();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.TxtSifre = new DevExpress.XtraEditors.TextEdit();
             this.pictureEdit3 = new DevExpress.XtraEditors.PictureEdit();
+            this.TxtSifre = new DevExpress.XtraEditors.TextEdit();
             this.pictureEdit4 = new DevExpress.XtraEditors.PictureEdit();
             this.BtnPersonel = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit1.Properties)).BeginInit();
             this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtKullanici.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit2.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtKullanici.Properties)).BeginInit();
             this.panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtSifre.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit3.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtSifre.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit4.Properties)).BeginInit();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -74,17 +74,41 @@
             this.panel1.Size = new System.Drawing.Size(300, 454);
             this.panel1.TabIndex = 6;
             // 
-            // labelControl1
+            // labelControl5
             // 
-            this.labelControl1.Appearance.Font = new System.Drawing.Font("Franklin Gothic Medium", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.labelControl1.Appearance.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.labelControl1.Appearance.Options.UseFont = true;
-            this.labelControl1.Appearance.Options.UseForeColor = true;
-            this.labelControl1.Location = new System.Drawing.Point(29, 226);
-            this.labelControl1.Name = "labelControl1";
-            this.labelControl1.Size = new System.Drawing.Size(254, 24);
-            this.labelControl1.TabIndex = 0;
-            this.labelControl1.Text = "İş Takip ve Yönetim Sistemi";
+            this.labelControl5.Appearance.Font = new System.Drawing.Font("Franklin Gothic Medium", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.labelControl5.Appearance.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.labelControl5.Appearance.Options.UseFont = true;
+            this.labelControl5.Appearance.Options.UseForeColor = true;
+            this.labelControl5.Location = new System.Drawing.Point(264, 416);
+            this.labelControl5.Name = "labelControl5";
+            this.labelControl5.Size = new System.Drawing.Size(30, 15);
+            this.labelControl5.TabIndex = 4;
+            this.labelControl5.Text = "V 1.1";
+            // 
+            // labelControl2
+            // 
+            this.labelControl2.Appearance.Font = new System.Drawing.Font("Franklin Gothic Medium", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.labelControl2.Appearance.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.labelControl2.Appearance.Options.UseFont = true;
+            this.labelControl2.Appearance.Options.UseForeColor = true;
+            this.labelControl2.Location = new System.Drawing.Point(13, 416);
+            this.labelControl2.Name = "labelControl2";
+            this.labelControl2.Size = new System.Drawing.Size(115, 15);
+            this.labelControl2.TabIndex = 3;
+            this.labelControl2.Text = "Tüm Haklar Saklıdır";
+            // 
+            // labelControl3
+            // 
+            this.labelControl3.Appearance.Font = new System.Drawing.Font("Franklin Gothic Medium", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.labelControl3.Appearance.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.labelControl3.Appearance.Options.UseFont = true;
+            this.labelControl3.Appearance.Options.UseForeColor = true;
+            this.labelControl3.Location = new System.Drawing.Point(93, 256);
+            this.labelControl3.Name = "labelControl3";
+            this.labelControl3.Size = new System.Drawing.Size(105, 24);
+            this.labelControl3.TabIndex = 2;
+            this.labelControl3.Text = "Giriş Paneli";
             // 
             // pictureEdit1
             // 
@@ -99,41 +123,17 @@
             this.pictureEdit1.Size = new System.Drawing.Size(120, 120);
             this.pictureEdit1.TabIndex = 1;
             // 
-            // labelControl3
+            // labelControl1
             // 
-            this.labelControl3.Appearance.Font = new System.Drawing.Font("Franklin Gothic Medium", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.labelControl3.Appearance.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.labelControl3.Appearance.Options.UseFont = true;
-            this.labelControl3.Appearance.Options.UseForeColor = true;
-            this.labelControl3.Location = new System.Drawing.Point(93, 256);
-            this.labelControl3.Name = "labelControl3";
-            this.labelControl3.Size = new System.Drawing.Size(105, 24);
-            this.labelControl3.TabIndex = 2;
-            this.labelControl3.Text = "Giriş Paneli";
-            // 
-            // labelControl2
-            // 
-            this.labelControl2.Appearance.Font = new System.Drawing.Font("Franklin Gothic Medium", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.labelControl2.Appearance.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.labelControl2.Appearance.Options.UseFont = true;
-            this.labelControl2.Appearance.Options.UseForeColor = true;
-            this.labelControl2.Location = new System.Drawing.Point(13, 416);
-            this.labelControl2.Name = "labelControl2";
-            this.labelControl2.Size = new System.Drawing.Size(115, 15);
-            this.labelControl2.TabIndex = 3;
-            this.labelControl2.Text = "Tüm Haklar Saklıdır";
-            // 
-            // labelControl5
-            // 
-            this.labelControl5.Appearance.Font = new System.Drawing.Font("Franklin Gothic Medium", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.labelControl5.Appearance.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.labelControl5.Appearance.Options.UseFont = true;
-            this.labelControl5.Appearance.Options.UseForeColor = true;
-            this.labelControl5.Location = new System.Drawing.Point(264, 416);
-            this.labelControl5.Name = "labelControl5";
-            this.labelControl5.Size = new System.Drawing.Size(30, 15);
-            this.labelControl5.TabIndex = 4;
-            this.labelControl5.Text = "V 1.1";
+            this.labelControl1.Appearance.Font = new System.Drawing.Font("Franklin Gothic Medium", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.labelControl1.Appearance.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.labelControl1.Appearance.Options.UseFont = true;
+            this.labelControl1.Appearance.Options.UseForeColor = true;
+            this.labelControl1.Location = new System.Drawing.Point(29, 226);
+            this.labelControl1.Name = "labelControl1";
+            this.labelControl1.Size = new System.Drawing.Size(254, 24);
+            this.labelControl1.TabIndex = 0;
+            this.labelControl1.Text = "İş Takip ve Yönetim Sistemi";
             // 
             // BtnAdmin
             // 
@@ -201,6 +201,18 @@
             this.panel3.Size = new System.Drawing.Size(395, 58);
             this.panel3.TabIndex = 12;
             // 
+            // pictureEdit2
+            // 
+            this.pictureEdit2.EditValue = ((object)(resources.GetObject("pictureEdit2.EditValue")));
+            this.pictureEdit2.Location = new System.Drawing.Point(3, 9);
+            this.pictureEdit2.Name = "pictureEdit2";
+            this.pictureEdit2.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
+            this.pictureEdit2.Properties.Appearance.Options.UseBackColor = true;
+            this.pictureEdit2.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.pictureEdit2.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
+            this.pictureEdit2.Size = new System.Drawing.Size(35, 35);
+            this.pictureEdit2.TabIndex = 14;
+            // 
             // TxtKullanici
             // 
             this.TxtKullanici.Location = new System.Drawing.Point(44, 14);
@@ -216,18 +228,6 @@
             this.TxtKullanici.TabIndex = 3;
             this.TxtKullanici.Click += new System.EventHandler(this.textEdit3_Click);
             // 
-            // pictureEdit2
-            // 
-            this.pictureEdit2.EditValue = ((object)(resources.GetObject("pictureEdit2.EditValue")));
-            this.pictureEdit2.Location = new System.Drawing.Point(3, 9);
-            this.pictureEdit2.Name = "pictureEdit2";
-            this.pictureEdit2.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
-            this.pictureEdit2.Properties.Appearance.Options.UseBackColor = true;
-            this.pictureEdit2.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.pictureEdit2.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
-            this.pictureEdit2.Size = new System.Drawing.Size(35, 35);
-            this.pictureEdit2.TabIndex = 14;
-            // 
             // panel4
             // 
             this.panel4.Controls.Add(this.pictureEdit3);
@@ -236,6 +236,18 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(395, 58);
             this.panel4.TabIndex = 13;
+            // 
+            // pictureEdit3
+            // 
+            this.pictureEdit3.EditValue = ((object)(resources.GetObject("pictureEdit3.EditValue")));
+            this.pictureEdit3.Location = new System.Drawing.Point(3, 7);
+            this.pictureEdit3.Name = "pictureEdit3";
+            this.pictureEdit3.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
+            this.pictureEdit3.Properties.Appearance.Options.UseBackColor = true;
+            this.pictureEdit3.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.pictureEdit3.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
+            this.pictureEdit3.Size = new System.Drawing.Size(35, 35);
+            this.pictureEdit3.TabIndex = 15;
             // 
             // TxtSifre
             // 
@@ -254,18 +266,6 @@
             this.TxtSifre.TabIndex = 3;
             this.TxtSifre.Click += new System.EventHandler(this.textEdit1_Click);
             // 
-            // pictureEdit3
-            // 
-            this.pictureEdit3.EditValue = ((object)(resources.GetObject("pictureEdit3.EditValue")));
-            this.pictureEdit3.Location = new System.Drawing.Point(3, 7);
-            this.pictureEdit3.Name = "pictureEdit3";
-            this.pictureEdit3.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
-            this.pictureEdit3.Properties.Appearance.Options.UseBackColor = true;
-            this.pictureEdit3.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.pictureEdit3.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
-            this.pictureEdit3.Size = new System.Drawing.Size(35, 35);
-            this.pictureEdit3.TabIndex = 15;
-            // 
             // pictureEdit4
             // 
             this.pictureEdit4.EditValue = ((object)(resources.GetObject("pictureEdit4.EditValue")));
@@ -277,6 +277,7 @@
             this.pictureEdit4.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
             this.pictureEdit4.Size = new System.Drawing.Size(35, 35);
             this.pictureEdit4.TabIndex = 15;
+            this.pictureEdit4.EditValueChanged += new System.EventHandler(this.pictureEdit4_EditValueChanged);
             this.pictureEdit4.Click += new System.EventHandler(this.pictureEdit4_Click);
             // 
             // BtnPersonel
@@ -327,11 +328,11 @@
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit1.Properties)).EndInit();
             this.panel3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.TxtKullanici.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit2.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtKullanici.Properties)).EndInit();
             this.panel4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.TxtSifre.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit3.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtSifre.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit4.Properties)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();

@@ -1,6 +1,6 @@
 ﻿namespace İstakip.Formlar
 {
-    partial class FrmFirmalar
+    partial class FrmFirmaEkle
     {
         /// <summary>
         /// Required designer variable.
@@ -28,10 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmFirmalar));
-            this.gridControl1 = new DevExpress.XtraGrid.GridControl();
-            this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmFirmaEkle));
             this.Txtgorsel = new DevExpress.XtraEditors.TextEdit();
             this.labelControl11 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl10 = new DevExpress.XtraEditors.LabelControl();
@@ -49,17 +46,12 @@
             this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
             this.Txtyetkili = new DevExpress.XtraEditors.TextEdit();
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
-            this.BtnGuncelle = new DevExpress.XtraEditors.SimpleButton();
-            this.BtnSil = new DevExpress.XtraEditors.SimpleButton();
+            this.BtnEkle = new DevExpress.XtraEditors.SimpleButton();
             this.TxtAdi = new DevExpress.XtraEditors.TextEdit();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.TxtID = new DevExpress.XtraEditors.TextEdit();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.Txtadres = new DevExpress.XtraEditors.MemoEdit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
-            this.groupControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Txtgorsel.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Txtilce.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Txtil.Properties)).BeginInit();
@@ -73,255 +65,211 @@
             ((System.ComponentModel.ISupportInitialize)(this.Txtadres.Properties)).BeginInit();
             this.SuspendLayout();
             // 
-            // gridControl1
-            // 
-            this.gridControl1.Location = new System.Drawing.Point(-7, -1);
-            this.gridControl1.MainView = this.gridView1;
-            this.gridControl1.Name = "gridControl1";
-            this.gridControl1.Size = new System.Drawing.Size(650, 452);
-            this.gridControl1.TabIndex = 2;
-            this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
-            this.gridView1});
-            // 
-            // gridView1
-            // 
-            this.gridView1.GridControl = this.gridControl1;
-            this.gridView1.Name = "gridView1";
-            this.gridView1.OptionsView.ShowGroupPanel = false;
-            this.gridView1.FocusedRowChanged += new DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventHandler(this.gridView1_FocusedRowChanged);
-            // 
-            // groupControl1
-            // 
-            this.groupControl1.Controls.Add(this.Txtgorsel);
-            this.groupControl1.Controls.Add(this.labelControl11);
-            this.groupControl1.Controls.Add(this.labelControl10);
-            this.groupControl1.Controls.Add(this.Txtilce);
-            this.groupControl1.Controls.Add(this.labelControl9);
-            this.groupControl1.Controls.Add(this.Txtil);
-            this.groupControl1.Controls.Add(this.labelControl8);
-            this.groupControl1.Controls.Add(this.Txtsektor);
-            this.groupControl1.Controls.Add(this.labelControl7);
-            this.groupControl1.Controls.Add(this.TxtSifre);
-            this.groupControl1.Controls.Add(this.labelControl6);
-            this.groupControl1.Controls.Add(this.TxtMail);
-            this.groupControl1.Controls.Add(this.labelControl5);
-            this.groupControl1.Controls.Add(this.TxtTelefon);
-            this.groupControl1.Controls.Add(this.labelControl4);
-            this.groupControl1.Controls.Add(this.Txtyetkili);
-            this.groupControl1.Controls.Add(this.labelControl3);
-            this.groupControl1.Controls.Add(this.BtnGuncelle);
-            this.groupControl1.Controls.Add(this.BtnSil);
-            this.groupControl1.Controls.Add(this.TxtAdi);
-            this.groupControl1.Controls.Add(this.labelControl2);
-            this.groupControl1.Controls.Add(this.TxtID);
-            this.groupControl1.Controls.Add(this.labelControl1);
-            this.groupControl1.Controls.Add(this.Txtadres);
-            this.groupControl1.Location = new System.Drawing.Point(649, -1);
-            this.groupControl1.Name = "groupControl1";
-            this.groupControl1.Size = new System.Drawing.Size(327, 452);
-            this.groupControl1.TabIndex = 5;
-            this.groupControl1.Paint += new System.Windows.Forms.PaintEventHandler(this.groupControl1_Paint);
-            // 
             // Txtgorsel
             // 
-            this.Txtgorsel.Location = new System.Drawing.Point(115, 338);
+            this.Txtgorsel.Location = new System.Drawing.Point(92, 301);
             this.Txtgorsel.Name = "Txtgorsel";
             this.Txtgorsel.Size = new System.Drawing.Size(160, 20);
-            this.Txtgorsel.TabIndex = 25;
+            this.Txtgorsel.TabIndex = 50;
             // 
             // labelControl11
             // 
-            this.labelControl11.Location = new System.Drawing.Point(63, 341);
+            this.labelControl11.Location = new System.Drawing.Point(40, 304);
             this.labelControl11.Name = "labelControl11";
             this.labelControl11.Size = new System.Drawing.Size(34, 13);
-            this.labelControl11.TabIndex = 24;
+            this.labelControl11.TabIndex = 49;
             this.labelControl11.Text = "Görsel:";
             // 
             // labelControl10
             // 
-            this.labelControl10.Location = new System.Drawing.Point(69, 286);
+            this.labelControl10.Location = new System.Drawing.Point(46, 249);
             this.labelControl10.Name = "labelControl10";
             this.labelControl10.Size = new System.Drawing.Size(28, 13);
-            this.labelControl10.TabIndex = 22;
+            this.labelControl10.TabIndex = 47;
             this.labelControl10.Text = "Adres";
             // 
             // Txtilce
             // 
-            this.Txtilce.Location = new System.Drawing.Point(115, 257);
+            this.Txtilce.Location = new System.Drawing.Point(92, 220);
             this.Txtilce.Name = "Txtilce";
             this.Txtilce.Size = new System.Drawing.Size(160, 20);
-            this.Txtilce.TabIndex = 21;
+            this.Txtilce.TabIndex = 46;
             // 
             // labelControl9
             // 
-            this.labelControl9.Location = new System.Drawing.Point(76, 260);
+            this.labelControl9.Location = new System.Drawing.Point(53, 223);
             this.labelControl9.Name = "labelControl9";
             this.labelControl9.Size = new System.Drawing.Size(21, 13);
-            this.labelControl9.TabIndex = 20;
+            this.labelControl9.TabIndex = 45;
             this.labelControl9.Text = "İlçe:";
             // 
             // Txtil
             // 
-            this.Txtil.Location = new System.Drawing.Point(115, 231);
+            this.Txtil.Location = new System.Drawing.Point(92, 194);
             this.Txtil.Name = "Txtil";
             this.Txtil.Size = new System.Drawing.Size(160, 20);
-            this.Txtil.TabIndex = 19;
+            this.Txtil.TabIndex = 44;
             // 
             // labelControl8
             // 
-            this.labelControl8.Location = new System.Drawing.Point(87, 234);
+            this.labelControl8.Location = new System.Drawing.Point(64, 197);
             this.labelControl8.Name = "labelControl8";
             this.labelControl8.Size = new System.Drawing.Size(10, 13);
-            this.labelControl8.TabIndex = 18;
+            this.labelControl8.TabIndex = 43;
             this.labelControl8.Text = "İl:";
             // 
             // Txtsektor
             // 
-            this.Txtsektor.Location = new System.Drawing.Point(115, 205);
+            this.Txtsektor.Location = new System.Drawing.Point(92, 168);
             this.Txtsektor.Name = "Txtsektor";
             this.Txtsektor.Size = new System.Drawing.Size(160, 20);
-            this.Txtsektor.TabIndex = 17;
+            this.Txtsektor.TabIndex = 42;
             // 
             // labelControl7
             // 
-            this.labelControl7.Location = new System.Drawing.Point(62, 208);
+            this.labelControl7.Location = new System.Drawing.Point(39, 171);
             this.labelControl7.Name = "labelControl7";
             this.labelControl7.Size = new System.Drawing.Size(35, 13);
-            this.labelControl7.TabIndex = 16;
+            this.labelControl7.TabIndex = 41;
             this.labelControl7.Text = "Sektör:";
             // 
             // TxtSifre
             // 
-            this.TxtSifre.Location = new System.Drawing.Point(115, 179);
+            this.TxtSifre.Location = new System.Drawing.Point(92, 142);
             this.TxtSifre.Name = "TxtSifre";
             this.TxtSifre.Size = new System.Drawing.Size(160, 20);
-            this.TxtSifre.TabIndex = 15;
+            this.TxtSifre.TabIndex = 40;
             // 
             // labelControl6
             // 
-            this.labelControl6.Location = new System.Drawing.Point(71, 182);
+            this.labelControl6.Location = new System.Drawing.Point(48, 145);
             this.labelControl6.Name = "labelControl6";
             this.labelControl6.Size = new System.Drawing.Size(26, 13);
-            this.labelControl6.TabIndex = 14;
+            this.labelControl6.TabIndex = 39;
             this.labelControl6.Text = "Şifre:";
             // 
             // TxtMail
             // 
-            this.TxtMail.Location = new System.Drawing.Point(115, 153);
+            this.TxtMail.Location = new System.Drawing.Point(92, 116);
             this.TxtMail.Name = "TxtMail";
             this.TxtMail.Size = new System.Drawing.Size(160, 20);
-            this.TxtMail.TabIndex = 13;
+            this.TxtMail.TabIndex = 38;
             // 
             // labelControl5
             // 
-            this.labelControl5.Location = new System.Drawing.Point(75, 156);
+            this.labelControl5.Location = new System.Drawing.Point(52, 119);
             this.labelControl5.Name = "labelControl5";
             this.labelControl5.Size = new System.Drawing.Size(22, 13);
-            this.labelControl5.TabIndex = 12;
+            this.labelControl5.TabIndex = 37;
             this.labelControl5.Text = "Mail:";
             // 
             // TxtTelefon
             // 
-            this.TxtTelefon.Location = new System.Drawing.Point(115, 127);
+            this.TxtTelefon.Location = new System.Drawing.Point(92, 90);
             this.TxtTelefon.Name = "TxtTelefon";
             this.TxtTelefon.Size = new System.Drawing.Size(160, 20);
-            this.TxtTelefon.TabIndex = 11;
+            this.TxtTelefon.TabIndex = 36;
             // 
             // labelControl4
             // 
-            this.labelControl4.Location = new System.Drawing.Point(57, 130);
+            this.labelControl4.Location = new System.Drawing.Point(34, 93);
             this.labelControl4.Name = "labelControl4";
             this.labelControl4.Size = new System.Drawing.Size(40, 13);
-            this.labelControl4.TabIndex = 10;
+            this.labelControl4.TabIndex = 35;
             this.labelControl4.Text = "Telefon:";
             // 
             // Txtyetkili
             // 
-            this.Txtyetkili.Location = new System.Drawing.Point(115, 101);
+            this.Txtyetkili.Location = new System.Drawing.Point(92, 64);
             this.Txtyetkili.Name = "Txtyetkili";
             this.Txtyetkili.Size = new System.Drawing.Size(160, 20);
-            this.Txtyetkili.TabIndex = 9;
+            this.Txtyetkili.TabIndex = 34;
             // 
             // labelControl3
             // 
-            this.labelControl3.Location = new System.Drawing.Point(34, 104);
+            this.labelControl3.Location = new System.Drawing.Point(11, 67);
             this.labelControl3.Name = "labelControl3";
             this.labelControl3.Size = new System.Drawing.Size(63, 13);
-            this.labelControl3.TabIndex = 8;
+            this.labelControl3.TabIndex = 33;
             this.labelControl3.Text = "Firma Yetkilisi";
             // 
-            // BtnGuncelle
+            // BtnEkle
             // 
-            this.BtnGuncelle.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnGuncelle.ImageOptions.Image")));
-            this.BtnGuncelle.Location = new System.Drawing.Point(115, 393);
-            this.BtnGuncelle.Name = "BtnGuncelle";
-            this.BtnGuncelle.Size = new System.Drawing.Size(160, 23);
-            this.BtnGuncelle.TabIndex = 7;
-            this.BtnGuncelle.Text = "Güncelle";
-            this.BtnGuncelle.Click += new System.EventHandler(this.BtnGuncelle_Click);
-            // 
-            // BtnSil
-            // 
-            this.BtnSil.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnSil.ImageOptions.Image")));
-            this.BtnSil.Location = new System.Drawing.Point(115, 364);
-            this.BtnSil.Name = "BtnSil";
-            this.BtnSil.Size = new System.Drawing.Size(160, 23);
-            this.BtnSil.TabIndex = 6;
-            this.BtnSil.Text = "Sil";
-            this.BtnSil.Click += new System.EventHandler(this.BtnSil_Click);
+            this.BtnEkle.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnEkle.ImageOptions.Image")));
+            this.BtnEkle.Location = new System.Drawing.Point(92, 327);
+            this.BtnEkle.Name = "BtnEkle";
+            this.BtnEkle.Size = new System.Drawing.Size(160, 23);
+            this.BtnEkle.TabIndex = 30;
+            this.BtnEkle.Text = "Ekle";
+            this.BtnEkle.Click += new System.EventHandler(this.BtnEkle_Click);
             // 
             // TxtAdi
             // 
-            this.TxtAdi.Location = new System.Drawing.Point(115, 75);
+            this.TxtAdi.Location = new System.Drawing.Point(92, 38);
             this.TxtAdi.Name = "TxtAdi";
             this.TxtAdi.Size = new System.Drawing.Size(160, 20);
-            this.TxtAdi.TabIndex = 4;
+            this.TxtAdi.TabIndex = 29;
             // 
             // labelControl2
             // 
-            this.labelControl2.Location = new System.Drawing.Point(49, 78);
+            this.labelControl2.Location = new System.Drawing.Point(26, 41);
             this.labelControl2.Name = "labelControl2";
             this.labelControl2.Size = new System.Drawing.Size(48, 13);
-            this.labelControl2.TabIndex = 3;
+            this.labelControl2.TabIndex = 28;
             this.labelControl2.Text = "Firma Adı:";
             // 
             // TxtID
             // 
-            this.TxtID.Location = new System.Drawing.Point(115, 49);
+            this.TxtID.Location = new System.Drawing.Point(92, 12);
             this.TxtID.Name = "TxtID";
             this.TxtID.Size = new System.Drawing.Size(160, 20);
-            this.TxtID.TabIndex = 1;
+            this.TxtID.TabIndex = 27;
             // 
             // labelControl1
             // 
-            this.labelControl1.Location = new System.Drawing.Point(53, 52);
+            this.labelControl1.Location = new System.Drawing.Point(30, 15);
             this.labelControl1.Name = "labelControl1";
             this.labelControl1.Size = new System.Drawing.Size(44, 13);
-            this.labelControl1.TabIndex = 0;
+            this.labelControl1.TabIndex = 26;
             this.labelControl1.Text = "Firma ID:";
             // 
             // Txtadres
             // 
-            this.Txtadres.Location = new System.Drawing.Point(115, 283);
+            this.Txtadres.Location = new System.Drawing.Point(92, 246);
             this.Txtadres.Name = "Txtadres";
             this.Txtadres.Size = new System.Drawing.Size(160, 49);
-            this.Txtadres.TabIndex = 23;
+            this.Txtadres.TabIndex = 48;
             // 
-            // FrmFirmalar
+            // FrmFirmaEkle
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(969, 452);
-            this.Controls.Add(this.groupControl1);
-            this.Controls.Add(this.gridControl1);
-            this.Name = "FrmFirmalar";
-            this.Text = "Firma Listesi";
-            this.Load += new System.EventHandler(this.FrmFirmalar_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
-            this.groupControl1.ResumeLayout(false);
-            this.groupControl1.PerformLayout();
+            this.ClientSize = new System.Drawing.Size(269, 361);
+            this.Controls.Add(this.Txtgorsel);
+            this.Controls.Add(this.labelControl11);
+            this.Controls.Add(this.labelControl10);
+            this.Controls.Add(this.Txtilce);
+            this.Controls.Add(this.labelControl9);
+            this.Controls.Add(this.Txtil);
+            this.Controls.Add(this.labelControl8);
+            this.Controls.Add(this.Txtsektor);
+            this.Controls.Add(this.labelControl7);
+            this.Controls.Add(this.TxtSifre);
+            this.Controls.Add(this.labelControl6);
+            this.Controls.Add(this.TxtMail);
+            this.Controls.Add(this.labelControl5);
+            this.Controls.Add(this.TxtTelefon);
+            this.Controls.Add(this.labelControl4);
+            this.Controls.Add(this.Txtyetkili);
+            this.Controls.Add(this.labelControl3);
+            this.Controls.Add(this.BtnEkle);
+            this.Controls.Add(this.TxtAdi);
+            this.Controls.Add(this.labelControl2);
+            this.Controls.Add(this.TxtID);
+            this.Controls.Add(this.labelControl1);
+            this.Controls.Add(this.Txtadres);
+            this.Name = "FrmFirmaEkle";
+            this.Text = "FrmFirmaEkle";
             ((System.ComponentModel.ISupportInitialize)(this.Txtgorsel.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Txtilce.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Txtil.Properties)).EndInit();
@@ -334,14 +282,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.TxtID.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Txtadres.Properties)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
-        private DevExpress.XtraGrid.GridControl gridControl1;
-        private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
-        private DevExpress.XtraEditors.GroupControl groupControl1;
         private DevExpress.XtraEditors.TextEdit Txtgorsel;
         private DevExpress.XtraEditors.LabelControl labelControl11;
         private DevExpress.XtraEditors.LabelControl labelControl10;
@@ -359,8 +305,7 @@
         private DevExpress.XtraEditors.LabelControl labelControl4;
         private DevExpress.XtraEditors.TextEdit Txtyetkili;
         private DevExpress.XtraEditors.LabelControl labelControl3;
-        private DevExpress.XtraEditors.SimpleButton BtnGuncelle;
-        private DevExpress.XtraEditors.SimpleButton BtnSil;
+        private DevExpress.XtraEditors.SimpleButton BtnEkle;
         private DevExpress.XtraEditors.TextEdit TxtAdi;
         private DevExpress.XtraEditors.LabelControl labelControl2;
         private DevExpress.XtraEditors.TextEdit TxtID;

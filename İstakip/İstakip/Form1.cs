@@ -155,7 +155,8 @@ namespace İstakip
             }
         }
 
-        Formlar.FrmDepartmanİstatistik frm13;      private void BtnDepartmanİstatistik_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        Formlar.FrmDepartmanİstatistik frm13;
+        private void BtnDepartmanİstatistik_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             if (frm13 == null || frm13.IsDisposed)
             {
@@ -213,6 +214,36 @@ namespace İstakip
         private void barButtonItem16_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             System.Diagnostics.Process.Start("https://muratyucedag.com/");
+        }
+
+        Formlar.FrmDepartmanEkle frm18;
+        private void barButtonItem1_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            if (frm18 == null || frm18.IsDisposed)
+            {
+                frm18 = new Formlar.FrmDepartmanEkle();
+                frm18.Show();
+            }
+        }
+
+        Formlar.FrmPersonelEkle frm19;
+        private void barButtonItem4_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            if (frm19 == null || frm19.IsDisposed)
+            {
+                frm19 = new Formlar.FrmPersonelEkle();
+                frm19.Show();
+            }
+        }
+
+        Formlar.FrmFirmaEkle frm20;
+        private void barButtonItem6_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            if (frm20 == null || frm20.IsDisposed)
+            {
+                frm20 = new Formlar.FrmFirmaEkle();
+                frm20.Show();
+            }
         }
     }
 }

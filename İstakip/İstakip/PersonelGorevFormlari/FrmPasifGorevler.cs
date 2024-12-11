@@ -19,7 +19,7 @@ namespace İstakip.PersonelGorevFormlari
             InitializeComponent();
         }
 
-        DbisTakipEntitiess db = new DbisTakipEntitiess();
+        DbisTakipEntities db = new DbisTakipEntities();
         public string mail2;
 
         private void FrmPasifGorevler_Load(object sender, EventArgs e)

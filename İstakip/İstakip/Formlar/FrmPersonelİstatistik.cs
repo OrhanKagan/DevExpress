@@ -45,7 +45,7 @@ namespace İstakip.Formlar
 
 
 
-        DbisTakipEntitiess db = new DbisTakipEntitiess();
+        DbisTakipEntities db = new DbisTakipEntities();
 
         private void FrmPersonelİstatistik_Load(object sender, EventArgs e)
         {

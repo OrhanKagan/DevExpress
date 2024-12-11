@@ -74,18 +74,6 @@
     <Property Name="Durum" Type="bit" />
     <Property Name="Tarih" Type="date" />
   </EntityType>
-  <EntityType Name="TblMesajlar">
-    <Key>
-      <PropertyRef Name="ID" />
-    </Key>
-    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-    <Property Name="Gonderen" Type="int" />
-    <Property Name="Alici" Type="int" />
-    <Property Name="Konu" Type="nchar" MaxLength="50" />
-    <Property Name="Mesaj" Type="nvarchar(max)" />
-    <Property Name="Tarih" Type="date" />
-    <Property Name="Durum" Type="bit" />
-  </EntityType>
   <EntityType Name="TblPersonel">
     <Key>
       <PropertyRef Name="ID" />
@@ -100,14 +88,6 @@
     <Property Name="Durum" Type="bit" />
     <Property Name="Rol" Type="char" MaxLength="1" />
     <Property Name="Sifre" Type="nvarchar" MaxLength="50" />
-  </EntityType>
-  <EntityType Name="TblSehir">
-    <Key>
-      <PropertyRef Name="ID" />
-    </Key>
-    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-    <Property Name="Sehir" Type="nvarchar" MaxLength="200" />
-    <Property Name="Deger" Type="nvarchar" MaxLength="200" />
   </EntityType>
   <Association Name="FK_TblCagriDetay_TblCagrilar">
     <End Role="TblCagrilar" Type="Self.TblCagrilar" Multiplicity="0..1" />
@@ -181,30 +161,6 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK_TblMesajlar_TblFirmalar">
-    <End Role="TblFirmalar" Type="Self.TblFirmalar" Multiplicity="0..1" />
-    <End Role="TblMesajlar" Type="Self.TblMesajlar" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="TblFirmalar">
-        <PropertyRef Name="ID" />
-      </Principal>
-      <Dependent Role="TblMesajlar">
-        <PropertyRef Name="Gonderen" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="FK_TblMesajlar_TblFirmalar1">
-    <End Role="TblFirmalar" Type="Self.TblFirmalar" Multiplicity="0..1" />
-    <End Role="TblMesajlar" Type="Self.TblMesajlar" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="TblFirmalar">
-        <PropertyRef Name="ID" />
-      </Principal>
-      <Dependent Role="TblMesajlar">
-        <PropertyRef Name="Alici" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
   <Association Name="FK_TblPersonel_TblDepartman">
     <End Role="TblDepartman" Type="Self.TblDepartman" Multiplicity="0..1" />
     <End Role="TblPersonel" Type="Self.TblPersonel" Multiplicity="*" />
@@ -225,9 +181,7 @@
     <EntitySet Name="TblFirmalar" EntityType="Self.TblFirmalar" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="TblGorevDetaylar" EntityType="Self.TblGorevDetaylar" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="TblGorevler" EntityType="Self.TblGorevler" Schema="dbo" store:Type="Tables" />
-    <EntitySet Name="TblMesajlar" EntityType="Self.TblMesajlar" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="TblPersonel" EntityType="Self.TblPersonel" Schema="dbo" store:Type="Tables" />
-    <EntitySet Name="TblSehir" EntityType="Self.TblSehir" Schema="dbo" store:Type="Tables" />
     <AssociationSet Name="FK_TblCagriDetay_TblCagrilar" Association="Self.FK_TblCagriDetay_TblCagrilar">
       <End Role="TblCagrilar" EntitySet="TblCagrilar" />
       <End Role="TblCagriDetay" EntitySet="TblCagriDetay" />
@@ -251,14 +205,6 @@
     <AssociationSet Name="FK_TblGorevler_TblPersonel1" Association="Self.FK_TblGorevler_TblPersonel1">
       <End Role="TblPersonel" EntitySet="TblPersonel" />
       <End Role="TblGorevler" EntitySet="TblGorevler" />
-    </AssociationSet>
-    <AssociationSet Name="FK_TblMesajlar_TblFirmalar" Association="Self.FK_TblMesajlar_TblFirmalar">
-      <End Role="TblFirmalar" EntitySet="TblFirmalar" />
-      <End Role="TblMesajlar" EntitySet="TblMesajlar" />
-    </AssociationSet>
-    <AssociationSet Name="FK_TblMesajlar_TblFirmalar1" Association="Self.FK_TblMesajlar_TblFirmalar1">
-      <End Role="TblFirmalar" EntitySet="TblFirmalar" />
-      <End Role="TblMesajlar" EntitySet="TblMesajlar" />
     </AssociationSet>
     <AssociationSet Name="FK_TblPersonel_TblDepartman" Association="Self.FK_TblPersonel_TblDepartman">
       <End Role="TblDepartman" EntitySet="TblDepartman" />

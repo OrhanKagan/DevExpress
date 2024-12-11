@@ -32,5 +32,10 @@ namespace İstakip.Formlar
             string EURO = xmldosya.SelectSingleNode("Tarih_Date/Currency[@Kod='EUR']/BanknoteSelling").InnerXml;
             lblEuro.Text = string.Format("Tarih {0} EURO; {1}", tarih.ToShortDateString(), EURO);
         }
+
+        private void lblDollar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

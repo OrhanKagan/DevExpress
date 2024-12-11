@@ -111,13 +111,7 @@
     <Compile Include="Entity\TblGorevler.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
-    <Compile Include="Entity\TblMesajlar.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
-    </Compile>
     <Compile Include="Entity\TblPersonel.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Entity\TblSehir.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Form1.cs">
@@ -156,11 +150,23 @@
     <Compile Include="Formlar\FrmDepartman.Designer.cs">
       <DependentUpon>FrmDepartman.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formlar\FrmDepartmanEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\FrmDepartmanEkle.Designer.cs">
+      <DependentUpon>FrmDepartmanEkle.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formlar\FrmDepartmanİstatistik.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Formlar\FrmDepartmanİstatistik.Designer.cs">
       <DependentUpon>FrmDepartmanİstatistik.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\FrmFirmaEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\FrmFirmaEkle.Designer.cs">
+      <DependentUpon>FrmFirmaEkle.cs</DependentUpon>
     </Compile>
     <Compile Include="Formlar\FrmFirmalar.cs">
       <SubType>Form</SubType>
@@ -215,6 +221,12 @@
     </Compile>
     <Compile Include="Formlar\FrmPasifCagrı.Designer.cs">
       <DependentUpon>FrmPasifCagrı.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\FrmPersonelEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\FrmPersonelEkle.Designer.cs">
+      <DependentUpon>FrmPersonelEkle.cs</DependentUpon>
     </Compile>
     <Compile Include="Formlar\FrmTamamlananGorevler.cs">
       <SubType>Form</SubType>
@@ -290,8 +302,14 @@
     <EmbeddedResource Include="Formlar\FrmDepartman.resx">
       <DependentUpon>FrmDepartman.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\FrmDepartmanEkle.resx">
+      <DependentUpon>FrmDepartmanEkle.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formlar\FrmDepartmanİstatistik.resx">
       <DependentUpon>FrmDepartmanİstatistik.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\FrmFirmaEkle.resx">
+      <DependentUpon>FrmFirmaEkle.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formlar\FrmFirmalar.resx">
       <DependentUpon>FrmFirmalar.cs</DependentUpon>
@@ -319,6 +337,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formlar\FrmPasifCagrı.resx">
       <DependentUpon>FrmPasifCagrı.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\FrmPersonelEkle.resx">
+      <DependentUpon>FrmPersonelEkle.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formlar\FrmTamamlananGorevler.resx">
       <DependentUpon>FrmTamamlananGorevler.cs</DependentUpon>
@@ -379,19 +400,19 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
-  </ItemGroup>
-  <ItemGroup>
     <Content Include="Entity\Model1.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>Model1.edmx</DependentUpon>
       <LastGenOutput>Model1.Context.cs</LastGenOutput>
+      <DependentUpon>Model1.edmx</DependentUpon>
     </Content>
     <Content Include="Entity\Model1.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>Model1.edmx</DependentUpon>
       <LastGenOutput>Model1.cs</LastGenOutput>
     </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

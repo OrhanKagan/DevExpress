@@ -61,6 +61,7 @@
             this.Name = "FrmAktifCagrilar";
             this.Text = "FrmAktifCagrilar";
             this.Load += new System.EventHandler(this.FrmAktifCagrilar_Load);
+            this.DoubleClick += new System.EventHandler(this.gridControl1_DoubleClick);
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             this.ResumeLayout(false);

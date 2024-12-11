@@ -41,6 +41,7 @@
             this.lblDollar.Size = new System.Drawing.Size(12, 13);
             this.lblDollar.TabIndex = 0;
             this.lblDollar.Text = "00";
+            this.lblDollar.Click += new System.EventHandler(this.lblDollar_Click);
             // 
             // lblEuro
             // 

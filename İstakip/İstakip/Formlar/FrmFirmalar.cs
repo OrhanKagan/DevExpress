@@ -19,7 +19,7 @@ namespace İstakip.Formlar
             InitializeComponent();
         }
 
-        DbisTakipEntitiess db = new DbisTakipEntitiess();
+        DbisTakipEntities db = new DbisTakipEntities();
         void Listele()
         {
             var degerler = (from x in db.TblFirmalar
@@ -108,6 +108,11 @@ namespace İstakip.Formlar
             Txtilce.Text = gridView1.GetFocusedRowCellValue("ilce").ToString();
             Txtadres.Text = gridView1.GetFocusedRowCellValue("Adres").ToString();
             Txtgorsel.Text = gridView1.GetFocusedRowCellValue("Gorsel").ToString();
+        }
+
+        private void groupControl1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

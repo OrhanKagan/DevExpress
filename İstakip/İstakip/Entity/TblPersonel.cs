@@ -17,9 +17,9 @@ namespace İstakip.Entity
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public TblPersonel()
         {
-            this.TblCagrilar = new HashSet<TblCagrilar>();
             this.TblGorevler = new HashSet<TblGorevler>();
             this.TblGorevler1 = new HashSet<TblGorevler>();
+            this.TblCagrilar = new HashSet<TblCagrilar>();
         }
     
         public int ID { get; set; }
@@ -33,12 +33,12 @@ namespace İstakip.Entity
         public string Rol { get; set; }
         public string Sifre { get; set; }
     
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<TblCagrilar> TblCagrilar { get; set; }
         public virtual TblDepartman TblDepartman { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<TblGorevler> TblGorevler { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<TblGorevler> TblGorevler1 { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<TblCagrilar> TblCagrilar { get; set; }
     }
 }

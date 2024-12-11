@@ -24,7 +24,7 @@ namespace İstakip.Formlar
             this.Close();
         }
 
-        DbisTakipEntitiess db = new DbisTakipEntitiess();
+        DbisTakipEntities db = new DbisTakipEntities();
 
         private void btnkaydet_Click(object sender, EventArgs e)
         {

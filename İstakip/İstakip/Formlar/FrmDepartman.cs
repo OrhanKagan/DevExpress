@@ -18,7 +18,7 @@ namespace İstakip.Formlar
         {
             InitializeComponent();
         }
-        DbisTakipEntitiess db = new DbisTakipEntitiess();
+        DbisTakipEntities db = new DbisTakipEntities();
         void Listele()
         {
             var degerler = (from x in db.TblDepartman
@@ -32,16 +32,6 @@ namespace İstakip.Formlar
 
         private void BtnListele_Click(object sender, EventArgs e)
         {
-            Listele();
-        }
-
-        private void BtnEkle_Click(object sender, EventArgs e)
-        {
-            TblDepartman t = new TblDepartman();
-            t.Ad = TxtAdi.Text;
-            db.TblDepartman.Add(t);
-            db.SaveChanges();
-            XtraMessageBox.Show("Departman başarılı şekilde kaydedildi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
             Listele();
         }
 

@@ -30,20 +30,20 @@
         {
             this.components = new System.ComponentModel.Container();
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
-            this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.gridColumn1 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn2 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn3 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn4 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn5 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.görevDetaySilToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.kapatToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             this.contextMenuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // gridControl1
@@ -112,6 +112,19 @@
             this.gridColumn5.Visible = true;
             this.gridColumn5.VisibleIndex = 4;
             // 
+            // görevDetaySilToolStripMenuItem
+            // 
+            this.görevDetaySilToolStripMenuItem.Name = "görevDetaySilToolStripMenuItem";
+            this.görevDetaySilToolStripMenuItem.Size = new System.Drawing.Size(153, 22);
+            this.görevDetaySilToolStripMenuItem.Text = "Görev Detay Sil";
+            this.görevDetaySilToolStripMenuItem.Click += new System.EventHandler(this.görevDetaySilToolStripMenuItem_Click);
+            // 
+            // kapatToolStripMenuItem
+            // 
+            this.kapatToolStripMenuItem.Name = "kapatToolStripMenuItem";
+            this.kapatToolStripMenuItem.Size = new System.Drawing.Size(153, 22);
+            this.kapatToolStripMenuItem.Text = "Kapat";
+            // 
             // contextMenuStrip1
             // 
             this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -119,19 +132,6 @@
             this.kapatToolStripMenuItem});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
             this.contextMenuStrip1.Size = new System.Drawing.Size(154, 48);
-            // 
-            // görevDetaySilToolStripMenuItem
-            // 
-            this.görevDetaySilToolStripMenuItem.Name = "görevDetaySilToolStripMenuItem";
-            this.görevDetaySilToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.görevDetaySilToolStripMenuItem.Text = "Görev Detay Sil";
-            this.görevDetaySilToolStripMenuItem.Click += new System.EventHandler(this.görevDetaySilToolStripMenuItem_Click);
-            // 
-            // kapatToolStripMenuItem
-            // 
-            this.kapatToolStripMenuItem.Name = "kapatToolStripMenuItem";
-            this.kapatToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.kapatToolStripMenuItem.Text = "Kapat";
             // 
             // FrmGorevDetay
             // 
@@ -145,9 +145,9 @@
             this.Text = "Görev DetayLarı";
             this.Load += new System.EventHandler(this.FrmGorevDetay_Load);
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             this.contextMenuStrip1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -156,14 +156,14 @@
 
         private DevExpress.XtraGrid.GridControl gridControl1;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
-        private System.Windows.Forms.BindingSource bindingSource1;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn1;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn2;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn3;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn4;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn5;
-        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
+        private System.Windows.Forms.BindingSource bindingSource1;
         private System.Windows.Forms.ToolStripMenuItem görevDetaySilToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem kapatToolStripMenuItem;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
     }
 }

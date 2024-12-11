@@ -41,7 +41,7 @@ namespace İstakip.Login
             this.Close();
         }
 
-        DbisTakipEntitiess db = new DbisTakipEntitiess();
+        DbisTakipEntities db = new DbisTakipEntities();
 
         private void BtnAdmin_Click(object sender, EventArgs e)
         {
@@ -72,6 +72,11 @@ namespace İstakip.Login
             {
                 XtraMessageBox.Show("Hata Giriş", "Bilgi", MessageBoxButtons.OK);
             }
+        }
+
+        private void pictureEdit4_EditValueChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -36,7 +36,7 @@ namespace İstakip.PersonelGorevFormlari
             txtsaat.Text = saat;
         }
 
-        DbisTakipEntitiess db = new DbisTakipEntitiess();
+        DbisTakipEntities db = new DbisTakipEntities();
 
         private void btnkaydet_Click(object sender, EventArgs e)
         {

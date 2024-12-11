@@ -24,13 +24,13 @@ namespace İstakip.Entity
         public Nullable<int> CagriFirma { get; set; }
         public string Konu { get; set; }
         public string Aciklama { get; set; }
-        public Nullable<bool> Durum { get; set; }
         public Nullable<System.DateTime> Tarih { get; set; }
+        public Nullable<bool> Durum { get; set; }
         public Nullable<int> CagriPersonel { get; set; }
     
+        public virtual TblFirmalar TblFirmalar { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<TblCagriDetay> TblCagriDetay { get; set; }
-        public virtual TblFirmalar TblFirmalar { get; set; }
         public virtual TblPersonel TblPersonel { get; set; }
     }
 }

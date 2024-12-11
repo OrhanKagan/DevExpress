@@ -1,36 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-  <EntityContainerMapping StorageEntityContainer="DbisTakipModelStoreContainer" CdmEntityContainer="DbisTakipEntitiess">
+  <EntityContainerMapping StorageEntityContainer="DbisTakipModelStoreContainer" CdmEntityContainer="DbisTakipEntities">
     <EntitySetMapping Name="TblAdmin">
       <EntityTypeMapping TypeName="DbisTakipModel.TblAdmin">
         <MappingFragment StoreEntitySet="TblAdmin">
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="Kullanici" ColumnName="Kullanici" />
           <ScalarProperty Name="Sifre" ColumnName="Sifre" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
-    <EntitySetMapping Name="TblCagriDetay">
-      <EntityTypeMapping TypeName="DbisTakipModel.TblCagriDetay">
-        <MappingFragment StoreEntitySet="TblCagriDetay">
-          <ScalarProperty Name="ID" ColumnName="ID" />
-          <ScalarProperty Name="Cagri" ColumnName="Cagri" />
-          <ScalarProperty Name="Aciklama" ColumnName="Aciklama" />
-          <ScalarProperty Name="Tarih" ColumnName="Tarih" />
-          <ScalarProperty Name="Saat" ColumnName="Saat" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
-    <EntitySetMapping Name="TblCagrilar">
-      <EntityTypeMapping TypeName="DbisTakipModel.TblCagrilar">
-        <MappingFragment StoreEntitySet="TblCagrilar">
-          <ScalarProperty Name="ID" ColumnName="ID" />
-          <ScalarProperty Name="CagriFirma" ColumnName="CagriFirma" />
-          <ScalarProperty Name="Konu" ColumnName="Konu" />
-          <ScalarProperty Name="Aciklama" ColumnName="Aciklama" />
-          <ScalarProperty Name="Durum" ColumnName="Durum" />
-          <ScalarProperty Name="Tarih" ColumnName="Tarih" />
-          <ScalarProperty Name="CagriPersonel" ColumnName="CagriPersonel" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
@@ -45,17 +21,17 @@
     <EntitySetMapping Name="TblFirmalar">
       <EntityTypeMapping TypeName="DbisTakipModel.TblFirmalar">
         <MappingFragment StoreEntitySet="TblFirmalar">
+          <ScalarProperty Name="Gorsel" ColumnName="Gorsel" />
+          <ScalarProperty Name="Sifre" ColumnName="Sifre" />
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="Ad" ColumnName="Ad" />
           <ScalarProperty Name="Yetkili" ColumnName="Yetkili" />
           <ScalarProperty Name="Telefon" ColumnName="Telefon" />
           <ScalarProperty Name="Mail" ColumnName="Mail" />
-          <ScalarProperty Name="Sifre" ColumnName="Sifre" />
           <ScalarProperty Name="Sektör" ColumnName="Sektör" />
           <ScalarProperty Name="il" ColumnName="il" />
           <ScalarProperty Name="ilce" ColumnName="ilce" />
           <ScalarProperty Name="Adres" ColumnName="Adres" />
-          <ScalarProperty Name="Gorsel" ColumnName="Gorsel" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
@@ -82,22 +58,12 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <EntitySetMapping Name="TblMesajlar">
-      <EntityTypeMapping TypeName="DbisTakipModel.TblMesajlar">
-        <MappingFragment StoreEntitySet="TblMesajlar">
-          <ScalarProperty Name="ID" ColumnName="ID" />
-          <ScalarProperty Name="Gonderen" ColumnName="Gonderen" />
-          <ScalarProperty Name="Alici" ColumnName="Alici" />
-          <ScalarProperty Name="Konu" ColumnName="Konu" />
-          <ScalarProperty Name="Mesaj" ColumnName="Mesaj" />
-          <ScalarProperty Name="Tarih" ColumnName="Tarih" />
-          <ScalarProperty Name="Durum" ColumnName="Durum" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
     <EntitySetMapping Name="TblPersonel">
       <EntityTypeMapping TypeName="DbisTakipModel.TblPersonel">
         <MappingFragment StoreEntitySet="TblPersonel">
+          <ScalarProperty Name="Sifre" ColumnName="Sifre" />
+          <ScalarProperty Name="Rol" ColumnName="Rol" />
+          <ScalarProperty Name="Durum" ColumnName="Durum" />
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="Ad" ColumnName="Ad" />
           <ScalarProperty Name="Soyad" ColumnName="Soyad" />
@@ -105,18 +71,30 @@
           <ScalarProperty Name="Telefon" ColumnName="Telefon" />
           <ScalarProperty Name="Gorsel" ColumnName="Gorsel" />
           <ScalarProperty Name="Departman" ColumnName="Departman" />
-          <ScalarProperty Name="Durum" ColumnName="Durum" />
-          <ScalarProperty Name="Rol" ColumnName="Rol" />
-          <ScalarProperty Name="Sifre" ColumnName="Sifre" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <EntitySetMapping Name="TblSehir">
-      <EntityTypeMapping TypeName="DbisTakipModel.TblSehir">
-        <MappingFragment StoreEntitySet="TblSehir">
+    <EntitySetMapping Name="TblCagrilar">
+      <EntityTypeMapping TypeName="DbisTakipModel.TblCagrilar">
+        <MappingFragment StoreEntitySet="TblCagrilar">
+          <ScalarProperty Name="CagriPersonel" ColumnName="CagriPersonel" />
+          <ScalarProperty Name="Durum" ColumnName="Durum" />
+          <ScalarProperty Name="Tarih" ColumnName="Tarih" />
+          <ScalarProperty Name="Aciklama" ColumnName="Aciklama" />
+          <ScalarProperty Name="Konu" ColumnName="Konu" />
+          <ScalarProperty Name="CagriFirma" ColumnName="CagriFirma" />
           <ScalarProperty Name="ID" ColumnName="ID" />
-          <ScalarProperty Name="Sehir" ColumnName="Sehir" />
-          <ScalarProperty Name="Deger" ColumnName="Deger" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TblCagriDetay">
+      <EntityTypeMapping TypeName="DbisTakipModel.TblCagriDetay">
+        <MappingFragment StoreEntitySet="TblCagriDetay">
+          <ScalarProperty Name="Saat" ColumnName="Saat" />
+          <ScalarProperty Name="Tarih" ColumnName="Tarih" />
+          <ScalarProperty Name="Aciklama" ColumnName="Aciklama" />
+          <ScalarProperty Name="Cagri" ColumnName="Cagri" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

@@ -21,7 +21,7 @@ namespace İstakip.Formlar
 
         public int id;
 
-        DbisTakipEntitiess db = new DbisTakipEntitiess();
+        DbisTakipEntities db = new DbisTakipEntities();
 
         private void FrmCagriAtama_Load(object sender, EventArgs e)
         {
